@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+				 <style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent 20;
+    font-size: 30px;
+    border-radius: 100%;
+		width: 30px;
+		height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+	
+	</style>
+
+<body class="bg-dark">
+
+	<div class="container">
+			<div class="row">
+			<!--<div class="w-60 mx-auto text-center p-4 m-2 justify-content-center ">-->
+					<div class="w-60 mx-auto text-center p-3 m-2 ">
+				<!--<i class="fa fa-id-card fa-2x fa-gradient" aria-hidden="true"></i>
+				<font class="p-3 text-white"><b>29415</b>	</font>-->
+			<i class="fa fa-user fa-2x fa-gradient" aria-hidden="true"></i>
+				<font class="p-3 text-white"><b>NGUYEN VAN A</b>	</font>		
+			<i class="fa fa-usd fa-2x fa-gradient" aria-hidden="true"></i>
+				<font class="p-3 text-white"><b>091212891290912</b></font>
+				</div>
+		</div>
+				<div class="row justify-content-center">
+				<div class="col-md-4 col-lg-10 p-3 m-2 mx-auto text-white text-center">
+				<i class="fa fa-clock-o fa-3x fa-gradient" aria-hidden="true"> <b>50:10</b></i>
+			</div>
+	       </div>
+		
+		<div>
+			<a href="#" class=" w-100 zoom " >
+				<button class="col-md-3 col-lg-12 p-3 m-3 silver mx-auto text-center " style="border-radius: 5px">
+		 				<b>LINK ZOOM</b>
+				</button>
+			</a>
+		</div>
+			<!--	<div class="col-md-10 col-lg-12 p-3 m-4 silver mx-auto text-center">
+					
+				 <a href="#" class=" p-2 m-4 w-100 zoom " ><b>LINK ZOOM</b></a>
+			</div>
+				-->
+			
+				<div class="row mx-auto w-100  d-flex display-3  justify-content-center">
+					<button type="submit" class="button number m-3 "><b>1</b></button>
+					<button type="submit" class="button number m-3 "><b>2</b></button>
+					<button type="submit" class="button number m-3 "><b>5</b></button>
+					<button type="submit" class="button number m-3 "><b>10</b></button>
+					<button type="submit" class="button number m-3 "><b>20</b></button>
+					<button type="submit" class="button number m-3 "><b>50</b></button>
+					<button type="submit" class="button number m-3 "><b>100</b></button>
+
+						
+												
+				</div>
+			
+		<div class="w-80 mx-auto text-center justify-content-center">
+					<button type="submit" class=" button button1 p-2 m-3 w-30"><b>BÁN NGAY</b></button>					
+					<input type="number" style="border-radius: 2px ">
+					<br>	<button type="submit" class=" button button2 p-2 m-3 w-30"><b>BÁN NGAY</b></button>					
+					<input type="number" style="border-radius: 2px ">
+				</p>	
+					
+			</div>
+			
+	</div>
+	</div>
+	
+
+
+
+
+
+
+<div class="popup text-center">
+        <button id="close" class="close">&times;</button>
+        <h3>Khảo sát kết thúc</h3>
+       <p class="text-center">Đã hết thời gian thực hiện khảo sát.<br>Kết quả sẽ được cập nhật sau ít phút</p>
+        <a href="#" class="button khaosat1 p-2 m-3 w-20" ><b>Thoát</b></a> 
+    </div>
+	</div>
+<!--popup-->
+ <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+			
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+	
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>
